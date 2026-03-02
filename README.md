@@ -28,7 +28,7 @@ This repository contains the files necessary to run the experiments in the IEEE 
       - Simulink Coder
       - MATLAB Coder (with compatible C++ compiler)
       - Control System Toolbox (optional)
-   - QUANSER Quarc 2022 SP1 with active license (check [official site](https://download.quanser.com/doc/2022/QUARC_Software_Compatibility_Chart.pdf) for details)
+   - QUANSER Quarc 2022 SP1 with active license (check [official site](https://docs.quanser.com/quarc/compatibility/2022sp1/QUARC_Compatibility_Table.html) for details)
         
 ## 🗃️ Included Scripts
 | Script                                  | Description                                   |

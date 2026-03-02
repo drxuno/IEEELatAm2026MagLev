@@ -7,7 +7,8 @@
 - Carlos M. Ortiz Cervantes
 
 *Affiliation:*
-Universidad Autónoma de la Ciudad de México
+Universidad Autónoma de la Ciudad de México, Colegio de Ciencia y Tecnología.
+Mexico City, Mexico.
 
 ## ✏️ **Description.**
 This repository contains the files necessary to run the experiments in the IEEE Latin America paper "Integral Action and Reduced-Order Observer-Based Control for a Magnetic Levitation System", Submission ID 10363, as well as the obtained data sets from the experiment.
@@ -96,4 +97,4 @@ Once the experiment has ended, the produced file in *To File* block saves a MAT 
   7. Row 7. Observed velocity
   8. Row 8. Control signal (voltage) applied to the MagLev
 
-⚠️NOTE: The plots in the aforementioned paper were obtained by manually choosing each row and plotting using the `plot` command in MATLAB and files `MagLevExpmat2.mat` and  `MagLevExpSin.mat` for the step reference and sine reference, respectively. Colors, titles, plot limits, subplots, zoom, legend and editions were done manually in the MATLAB command line.
+⚠️NOTE: The plots in the aforementioned paper can and were obtained by manually choosing each row and plotting using the `plot` command in MATLAB and files `MagLevExpmat2.mat` and  `MagLevExpSin.mat` for the step reference and sine reference, respectively. Colors, titles, plot limits, subplots, zoom, legends, export and editions were done manually in the MATLAB command line.

@@ -69,11 +69,11 @@ This repository contains the files necessary to run the experiments in the IEEE 
 14. Observer pole position can be changed in line 60 of `MagLevInit2.m` (a Kalman Filter can be designed by uncommenting line 59 and commenting line 60).
 15. Run `MagLevInit2.m`
 16. Depending on desired reference signal, in `QuarcQ8MaglevControlObservadorv02.slx` change:
-   a. Step references.
+   - Step references.
        - *From File* block: Use `MagLevExpmat2.mat` as input file
        - *To File* block: Use `MagLevExpmatResults.mat` as output file, or choose any other name
        - Stop time: Change to 283.28
-   b. Sin reference
+   - Sin reference
        - *From File* block: Use `MagLevExpSin.mat` as input file
        - *To File* block: Use `MagLevExpSinResults.mat` as output file, or choose any other name to save the signals from the experiment
        - Stop time: Change to 95.184
@@ -86,7 +86,7 @@ This repository contains the files necessary to run the experiments in the IEEE 
    3. Row 3. Reference signal vector
   
 ## Obtained data
-Once the experiment has ended, the produced file in *To File* block saves a file that, when loaded in MATLAB, generates a single matrix called `maglevexp`, where each row is a different variable, time-sampled, in the following order:
+Once the experiment has ended, the produced file in *To File* block saves a MAT file that, when loaded in MATLAB, generates a single matrix called `maglevexp`, where each row is a different variable, and each column corresponds to each time sample of different experiment variables in the following order:
   1. Row 1. Time vector (sampled by $T_s$=0.001 s)
   2. Row 2. Obtained position
   3. Row 3. Reference signal vector
@@ -95,3 +95,5 @@ Once the experiment has ended, the produced file in *To File* block saves a file
   6. Row 6. Reconstructed velocity
   7. Row 7. Observed velocity
   8. Row 8. Control signal (voltage) applied to the MagLev
+
+The plots in the aforementioned paper were obtained by manually choosing each row and plotting using the `plot` command in MATLAB. Colors, titles, plot limits, subplots, zoom, legend and editions were done manually.

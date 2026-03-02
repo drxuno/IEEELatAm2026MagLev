@@ -9,10 +9,10 @@
 *Affiliation:*
 Universidad Autónoma de la Ciudad de México
 
-## **Description.**
+## ✏️ **Description.**
 This repository contains the files necessary to run the experiments in the IEEE Latin America paper "Integral Action and Reduced-Order Observer-Based Control for a Magnetic Levitation System", Submission ID 10363, as well as the obtained data sets from the experiment.
 
-## **Requirements**
+## ⏹️ **Requirements**
 - Hardware
    - PC with Intel or AMD 64-bit processor with eight logical cores
    - RAM: 16 GB (minimum)
@@ -29,19 +29,19 @@ This repository contains the files necessary to run the experiments in the IEEE 
       - MATLAB Coder (with compatible C++ compiler)
       - Control System Toolbox (optional)
         
-## Included Scripts
+## 🗃️ Included Scripts
 | Script                                  | Description                                   |
 |-----------------------------------------|-----------------------------------------------|
 | `MagLevInit2.m`                         | MATLAB Initialization file for the experiment. It calculates, based on the system parameters and desired equilibrium point for $Z_{eq}$, the required linearization matrices, transformation matrices, controller and observer gains. |
 | `QuarcQ8MaglevControlObservadorv02.slx` | Simulink file for running the experiment      |
 
-## Included Data files
+## 📁 Included Data files
 | File         | Description           |
 |--------------|-----------------------|
 |`MagLevExpmat2.mat` | Single MAT file that contains all signals from the experiments for the changing step reference
 |`MagLevExpSinmat.mat` | Single MAT file that contains all signals from the experiments for the sinusoidal reference
 
-### Description of the MAT files
+### 📋 Description of the MAT files
   Both MAT files contain a single matrix called `maglevexp`, where each row is a different variable, and each column corresponds with each time-sample of the variable  in the following order:
   1. Row 1. Time (sampled by $T_s$=0.001 s)
   2. Row 2. Obtained position
@@ -52,7 +52,7 @@ This repository contains the files necessary to run the experiments in the IEEE 
   7. Row 7. Observed velocity
   8. Row 8. Control signal (voltage) applied to the MagLev
 
-## Execution of the experiments
+## ➡️ Execution of the experiments
 1. Start MATLAB and check that QUARC is running in the background
 2. With the QUANSER Q8-USB Data Acquisition Card connected via USB to the PC, check that it is detected in the Device Administrator in Windows
 3. Connect the VoltPaq x1 Amplifier Command to Analog Output 0 in the Q8-USB Data Acquisition Card
@@ -79,13 +79,13 @@ This repository contains the files necessary to run the experiments in the IEEE 
        - Stop time: Change to 95.184
 17. In `QuarcQ8MaglevControlObservadorv02.slx`, push "Build, Deploy & Start" to compile and run the experiment.
 
-### Comment on the *From File* block
+### ✏️ Comment on the *From File* block
    A user-defined file can be used in this block, that loads a single matrix with N columns, but it must contain at least three rows:
    1. Row 1. Time vector (sampled by $T_s$=0.001 s)
    2. Row 2. *Don't care* data row
    3. Row 3. Reference signal vector
   
-## Obtained data
+## 📁 Obtained data
 Once the experiment has ended, the produced file in *To File* block saves a MAT file that, when loaded in MATLAB, generates a single matrix called `maglevexp`, where each row is a different variable, and each column corresponds to each time sample of different experiment variables in the following order:
   1. Row 1. Time vector (sampled by $T_s$=0.001 s)
   2. Row 2. Obtained position
@@ -96,4 +96,4 @@ Once the experiment has ended, the produced file in *To File* block saves a MAT 
   7. Row 7. Observed velocity
   8. Row 8. Control signal (voltage) applied to the MagLev
 
-The plots in the aforementioned paper were obtained by manually choosing each row and plotting using the `plot` command in MATLAB. Colors, titles, plot limits, subplots, zoom, legend and editions were done manually.
+NOTE: The plots in the aforementioned paper were obtained by manually choosing each row and plotting using the `plot` command in MATLAB and files `MagLevExpmat2.mat` and  `MagLevExpSin.mat` for the step reference and sine reference, respectively. Colors, titles, plot limits, subplots, zoom, legend and editions were done manually in the MATLAB command line.

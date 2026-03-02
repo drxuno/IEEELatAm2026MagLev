@@ -19,7 +19,6 @@ This repository contains the files necessary to run the experiments in the IEEE 
    - RAM: 16 GB (minimum)
    - HDD: 10 GB free (minimum)
    - QUANSER Q8-USB Data Acquisition Card (check [official site](https://www.quanser.com/products/q8-usb-data-acquisition-device/) for details)
-   - QUANSER Quarc 2022 SP1 with active license (check [official site](https://download.quanser.com/doc/2022/QUARC_Software_Compatibility_Chart.pdf) for details)
    - QUANSER Maglev Experiment (check [official site](https://www.quanser.com/products/magnetic-levitation/) for technical details)
    - QUANSER VoltPAQ x1 (check [official site](https://www.quanser.com/products/voltpaq-x1-amplifier/) for technical details)
 - Software
@@ -29,6 +28,7 @@ This repository contains the files necessary to run the experiments in the IEEE 
       - Simulink Coder
       - MATLAB Coder (with compatible C++ compiler)
       - Control System Toolbox (optional)
+   - QUANSER Quarc 2022 SP1 with active license (check [official site](https://download.quanser.com/doc/2022/QUARC_Software_Compatibility_Chart.pdf) for details)
         
 ## 🗃️ Included Scripts
 | Script                                  | Description                                   |

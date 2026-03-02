@@ -17,10 +17,10 @@ This repository contains the files necessary to run the experiments in the IEEE 
    - PC with Intel or AMD 64-bit processor with eight logical cores
    - RAM: 16 GB (minimum)
    - HDD: 10 GB free (minimum)
-   - QUANSER Q8-USB Data Acquisition Card
-   -  QUANSER Quarc 2022 SP1 with active license
-   -  QUANSER Maglev Experiment
-   -  QUANSER VoltPAQ x1
+   - QUANSER Q8-USB Data Acquisition Card (check [official site](https://www.quanser.com/products/q8-usb-data-acquisition-device/) for details)
+   - QUANSER Quarc 2022 SP1 with active license (check [official site](https://download.quanser.com/doc/2022/QUARC_Software_Compatibility_Chart.pdf) for details)
+   - QUANSER Maglev Experiment (check [official site](https://www.quanser.com/products/magnetic-levitation/) for technical details)
+   - QUANSER VoltPAQ x1 (check [official site](https://www.quanser.com/products/voltpaq-x1-amplifier/) for technical details)
 - Software
    - Windows 10 or 11
    - MATLAB 2022b with:
@@ -41,7 +41,7 @@ This repository contains the files necessary to run the experiments in the IEEE 
 |`MagLevExpmat2.mat` | Single MAT file that contains all signals from the experiments for the changing step reference
 |`MagLevExpSinmat.mat` | Single MAT file that contains all signals from the experiments for the sinusoidal reference
 
-### 📋 Description of the MAT files
+#### 📋 Description of the MAT files
   Both MAT files contain a single matrix called `maglevexp`, where each row is a different variable, and each column corresponds with each time-sample of the variable  in the following order:
   1. Row 1. Time (sampled by $T_s$=0.001 s)
   2. Row 2. Obtained position
@@ -96,4 +96,4 @@ Once the experiment has ended, the produced file in *To File* block saves a MAT 
   7. Row 7. Observed velocity
   8. Row 8. Control signal (voltage) applied to the MagLev
 
-NOTE: The plots in the aforementioned paper were obtained by manually choosing each row and plotting using the `plot` command in MATLAB and files `MagLevExpmat2.mat` and  `MagLevExpSin.mat` for the step reference and sine reference, respectively. Colors, titles, plot limits, subplots, zoom, legend and editions were done manually in the MATLAB command line.
+⚠️NOTE: The plots in the aforementioned paper were obtained by manually choosing each row and plotting using the `plot` command in MATLAB and files `MagLevExpmat2.mat` and  `MagLevExpSin.mat` for the step reference and sine reference, respectively. Colors, titles, plot limits, subplots, zoom, legend and editions were done manually in the MATLAB command line.
